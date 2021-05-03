@@ -23,13 +23,13 @@ The node “holonomic_robot” is the main node, it calls the service randtarget
 # •	The behaviour of the robot and how to make that
 
 The holonomic robot asks for a random target to the service server “randtarget_server”, this one picks random coordinates (x,y) in the interval (-6.0, 6.0) (min,max), to do this we have created a custom service of this kind:
----
+
 float32 min
 float32 max
----
+
 float32 x
 float32 y
----
+
 Then the robot reaches the goal with a linear velocity that follows this law:
 Linear velocity.x = k*x;
 Linear velocity.y = k*y;
