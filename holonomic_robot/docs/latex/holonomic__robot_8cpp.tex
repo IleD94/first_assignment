@@ -1,0 +1,101 @@
+\hypertarget{holonomic__robot_8cpp}{}\doxysection{C\+:/\+Users/capar/\+One\+Drive/\+Desktop/holonomic\+\_\+robot/src/holonomic\+\_\+robot.cpp File Reference}
+\label{holonomic__robot_8cpp}\index{C:/Users/capar/OneDrive/Desktop/holonomic\_robot/src/holonomic\_robot.cpp@{C:/Users/capar/OneDrive/Desktop/holonomic\_robot/src/holonomic\_robot.cpp}}
+{\ttfamily \#include \char`\"{}ros/ros.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}geometry\+\_\+msgs/\+Twist.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}holonomic\+\_\+robot/\+Random.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}nav\+\_\+msgs/\+Odometry.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{holonomic__robot_8cpp_a5d79deb395b5ea01136859eacbb55e26}{position\+Robot\+Callback}} (const nav\+\_\+msgs\+::\+Odometry\+::\+Const\+Ptr \&msg)
+\item 
+int \mbox{\hyperlink{holonomic__robot_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+ros\+::\+Publisher \mbox{\hyperlink{holonomic__robot_8cpp_a350594df3e8f6948c8462edfd41ce086}{pub}}
+\item 
+ros\+::\+Service\+Client \mbox{\hyperlink{holonomic__robot_8cpp_a17bcd065930a8a7f9f194078d9977268}{client}}
+\item 
+float \mbox{\hyperlink{holonomic__robot_8cpp_a24d6ffb6e8780eef0c81cd97e3f4fdaf}{x2}} = 0
+\item 
+float \mbox{\hyperlink{holonomic__robot_8cpp_a07bcd014e69eddcf4243b2a961014eaf}{y2}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{holonomic__robot_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}\label{holonomic__robot_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}} 
+\index{holonomic\_robot.cpp@{holonomic\_robot.cpp}!main@{main}}
+\index{main@{main}!holonomic\_robot.cpp@{holonomic\_robot.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+
+
+Definition at line 52 of file holonomic\+\_\+robot.\+cpp.
+
+\mbox{\Hypertarget{holonomic__robot_8cpp_a5d79deb395b5ea01136859eacbb55e26}\label{holonomic__robot_8cpp_a5d79deb395b5ea01136859eacbb55e26}} 
+\index{holonomic\_robot.cpp@{holonomic\_robot.cpp}!positionRobotCallback@{positionRobotCallback}}
+\index{positionRobotCallback@{positionRobotCallback}!holonomic\_robot.cpp@{holonomic\_robot.cpp}}
+\doxysubsubsection{\texorpdfstring{positionRobotCallback()}{positionRobotCallback()}}
+{\footnotesize\ttfamily void position\+Robot\+Callback (\begin{DoxyParamCaption}\item[{const nav\+\_\+msgs\+::\+Odometry\+::\+Const\+Ptr \&}]{msg }\end{DoxyParamCaption})}
+
+
+\begin{DoxyRetVals}{Return values}
+{\em the} & function position\+Robot\+Callback returns a void \\
+\hline
+\end{DoxyRetVals}
+
+\begin{DoxyParams}{Parameters}
+{\em pointer} & to the message \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 22 of file holonomic\+\_\+robot.\+cpp.
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{holonomic__robot_8cpp_a17bcd065930a8a7f9f194078d9977268}\label{holonomic__robot_8cpp_a17bcd065930a8a7f9f194078d9977268}} 
+\index{holonomic\_robot.cpp@{holonomic\_robot.cpp}!client@{client}}
+\index{client@{client}!holonomic\_robot.cpp@{holonomic\_robot.cpp}}
+\doxysubsubsection{\texorpdfstring{client}{client}}
+{\footnotesize\ttfamily ros\+::\+Service\+Client client}
+
+
+
+Definition at line 12 of file holonomic\+\_\+robot.\+cpp.
+
+\mbox{\Hypertarget{holonomic__robot_8cpp_a350594df3e8f6948c8462edfd41ce086}\label{holonomic__robot_8cpp_a350594df3e8f6948c8462edfd41ce086}} 
+\index{holonomic\_robot.cpp@{holonomic\_robot.cpp}!pub@{pub}}
+\index{pub@{pub}!holonomic\_robot.cpp@{holonomic\_robot.cpp}}
+\doxysubsubsection{\texorpdfstring{pub}{pub}}
+{\footnotesize\ttfamily ros\+::\+Publisher pub}
+
+
+
+Definition at line 10 of file holonomic\+\_\+robot.\+cpp.
+
+\mbox{\Hypertarget{holonomic__robot_8cpp_a24d6ffb6e8780eef0c81cd97e3f4fdaf}\label{holonomic__robot_8cpp_a24d6ffb6e8780eef0c81cd97e3f4fdaf}} 
+\index{holonomic\_robot.cpp@{holonomic\_robot.cpp}!x2@{x2}}
+\index{x2@{x2}!holonomic\_robot.cpp@{holonomic\_robot.cpp}}
+\doxysubsubsection{\texorpdfstring{x2}{x2}}
+{\footnotesize\ttfamily float x2 = 0}
+
+
+
+Definition at line 15 of file holonomic\+\_\+robot.\+cpp.
+
+\mbox{\Hypertarget{holonomic__robot_8cpp_a07bcd014e69eddcf4243b2a961014eaf}\label{holonomic__robot_8cpp_a07bcd014e69eddcf4243b2a961014eaf}} 
+\index{holonomic\_robot.cpp@{holonomic\_robot.cpp}!y2@{y2}}
+\index{y2@{y2}!holonomic\_robot.cpp@{holonomic\_robot.cpp}}
+\doxysubsubsection{\texorpdfstring{y2}{y2}}
+{\footnotesize\ttfamily float y2 = 0}
+
+
+
+Definition at line 16 of file holonomic\+\_\+robot.\+cpp.
+

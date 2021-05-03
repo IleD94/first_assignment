@@ -1,0 +1,70 @@
+\hypertarget{randtarget__server_8cpp}{}\doxysection{C\+:/\+Users/capar/\+One\+Drive/\+Desktop/holonomic\+\_\+robot/src/randtarget\+\_\+server.cpp File Reference}
+\label{randtarget__server_8cpp}\index{C:/Users/capar/OneDrive/Desktop/holonomic\_robot/src/randtarget\_server.cpp@{C:/Users/capar/OneDrive/Desktop/holonomic\_robot/src/randtarget\_server.cpp}}
+{\ttfamily \#include \char`\"{}ros/ros.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}holonomic\+\_\+robot/\+Random.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{randtarget__server_8cpp_a10f83119b77a8fbd085a5550955f85ff}{rand\+MToN}} (double M, double N)
+\item 
+bool \mbox{\hyperlink{randtarget__server_8cpp_a0dd8baed82f78cf2b4fdb02d82619ddd}{myrandom}} (holonomic\+\_\+robot\+::\+Random\+::\+Request \&req, holonomic\+\_\+robot\+::\+Random\+::\+Response \&res)
+\item 
+int \mbox{\hyperlink{randtarget__server_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{randtarget__server_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}\label{randtarget__server_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}} 
+\index{randtarget\_server.cpp@{randtarget\_server.cpp}!main@{main}}
+\index{main@{main}!randtarget\_server.cpp@{randtarget\_server.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+
+
+Definition at line 27 of file randtarget\+\_\+server.\+cpp.
+
+\mbox{\Hypertarget{randtarget__server_8cpp_a0dd8baed82f78cf2b4fdb02d82619ddd}\label{randtarget__server_8cpp_a0dd8baed82f78cf2b4fdb02d82619ddd}} 
+\index{randtarget\_server.cpp@{randtarget\_server.cpp}!myrandom@{myrandom}}
+\index{myrandom@{myrandom}!randtarget\_server.cpp@{randtarget\_server.cpp}}
+\doxysubsubsection{\texorpdfstring{myrandom()}{myrandom()}}
+{\footnotesize\ttfamily bool myrandom (\begin{DoxyParamCaption}\item[{holonomic\+\_\+robot\+::\+Random\+::\+Request \&}]{req,  }\item[{holonomic\+\_\+robot\+::\+Random\+::\+Response \&}]{res }\end{DoxyParamCaption})}
+
+
+\begin{DoxyRetVals}{Return values}
+{\em the} & function my random returns a value of type boolen \\
+\hline
+\end{DoxyRetVals}
+
+\begin{DoxyParams}{Parameters}
+{\em res} & is for receiving values of x and y coordinates \\
+\hline
+{\em req} & is for broadcasting the minimum and maximum value of the interval to the server \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 20 of file randtarget\+\_\+server.\+cpp.
+
+\mbox{\Hypertarget{randtarget__server_8cpp_a10f83119b77a8fbd085a5550955f85ff}\label{randtarget__server_8cpp_a10f83119b77a8fbd085a5550955f85ff}} 
+\index{randtarget\_server.cpp@{randtarget\_server.cpp}!randMToN@{randMToN}}
+\index{randMToN@{randMToN}!randtarget\_server.cpp@{randtarget\_server.cpp}}
+\doxysubsubsection{\texorpdfstring{randMToN()}{randMToN()}}
+{\footnotesize\ttfamily double rand\+MToN (\begin{DoxyParamCaption}\item[{double}]{M,  }\item[{double}]{N }\end{DoxyParamCaption})}
+
+
+\begin{DoxyRetVals}{Return values}
+{\em the} & function rand\+MToN returns a value of type double \\
+\hline
+\end{DoxyRetVals}
+
+\begin{DoxyParams}{Parameters}
+{\em M} & value is the minimum of the interval \\
+\hline
+{\em N} & value is the maximum of the interval \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 9 of file randtarget\+\_\+server.\+cpp.
+
